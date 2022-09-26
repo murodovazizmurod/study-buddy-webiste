@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Buddy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.17/dist/css/splide.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/logo.png" alt="Study Buddy's Logo" width="180" height="50">
+        </div>
+        <div class="group">
+            <input type="checkbox" id="chekc">
+            <ul>
+                <li><a href="#" class="item">Home</a></li>
+                <li><a href="#" class="item">Groups</a></li>
+                <li><a href="#" class="item">Team</a></li>
+                <li><a href="#" class="item">Events</a></li>
+                <li><a href="#" class="item">Contact</a></li>
+            </ul>
+            <label for="chekc"><i class="fa-solid fa-bars"></i></label>
+        </div>
+        <div class="user">
+            <!-- If user logged in -->
+            <a href="#" class="default">Profile</a>
+            <div class="circle"></div>
+            <!-- Else -->
+            <!-- <a href="#" class="circled">Login/Register</a> -->
+        </div>
+    </header>
+    <section class="main">
+        <!-- Carusel -->
+        <div class="splide" id="main" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <div class="splide__slide"><img src="https://dummyimage.com/1440x650" alt="DummyImage" id="poster1" class="poster"></div>
+                    <div class="splide__slide"><img src="https://dummyimage.com/1440x650" alt="DummyImage" id="poster2" class="poster"></div>
+                    <div class="splide__slide"><img src="https://dummyimage.com/1440x650" alt="DummyImage" id="poster3" class="poster"></div>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="groups">
+        <!-- Carusel -->
+        <div class="splide gr" id="gourps" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <div class="splide__slide gr-item">
+                        <div class="content">
+                            <div class="head">
+                                English
+                            </div>
+                            <div class="body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nobis, repellendus cupiditate in doloribus enim illo dignissimos a voluptatibus perspiciatis impedit exercitationem. Quod ut inventore nesciunt, reprehenderit tempore, atque corrupti pariatur non delectus et, aspernatur optio. Dolores esse ad harum, provident eius autem dicta sint beatae est laborum a cupiditate corporis voluptate nostrum repellendus suscipit sequi dolorem consequatur aliquam earum eveniet distinctio. Molestias ex tempore vitae ducimus facere quaerat incidunt laboriosam possimus, non quas reiciendis, enim et error officiis id quasi aperiam quos iste eos. Maxime magni repudiandae officia nesciunt commodi animi optio ex asperiores accusamus? Quaerat impedit tempore facere.
+                            </div>
+                            <div class="info">
+                                <a href="#" class="join-btn">Join</a>
+                                <span><img src="user.png" alt="Users" style="width: 20px;height:20px;"> 178K</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="splide__slide gr-item">
+                        <div class="content">
+                            <div class="head">
+                                Admission
+                            </div>
+                            <div class="body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nobis, repellendus cupiditate in doloribus enim illo dignissimos a voluptatibus perspiciatis impedit exercitationem. Quod ut inventore nesciunt, reprehenderit tempore, atque corrupti pariatur non delectus et, aspernatur optio. Dolores esse ad harum, provident eius autem dicta sint beatae est laborum a cupiditate corporis voluptate nostrum repellendus suscipit sequi dolorem consequatur aliquam earum eveniet distinctio. Molestias ex tempore vitae ducimus facere quaerat incidunt laboriosam possimus, non quas reiciendis, enim et error officiis id quasi aperiam quos iste eos. Maxime magni repudiandae officia nesciunt commodi animi optio ex asperiores accusamus? Quaerat impedit tempore facere.
+                            </div>
+                            <div class="info">
+                                <a href="#" class="join-btn">Join</a>
+                                <span><img src="user.png" alt="Users" style="width: 20px;height:20px;"> 178K</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="splide__slide gr-item">
+                        <div class="content">
+                            <div class="head">
+                                Biochemistry
+                            </div>
+                            <div class="body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nobis, repellendus cupiditate in doloribus enim illo dignissimos a voluptatibus perspiciatis impedit exercitationem. Quod ut inventore nesciunt, reprehenderit tempore, atque corrupti pariatur non delectus et, aspernatur optio. Dolores esse ad harum, provident eius autem dicta sint beatae est laborum a cupiditate corporis voluptate nostrum repellendus suscipit sequi dolorem consequatur aliquam earum eveniet distinctio. Molestias ex tempore vitae ducimus facere quaerat incidunt laboriosam possimus, non quas reiciendis, enim et error officiis id quasi aperiam quos iste eos. Maxime magni repudiandae officia nesciunt commodi animi optio ex asperiores accusamus? Quaerat impedit tempore facere.
+                            </div>
+                            <div class="info">
+                                <a href="#" class="join-btn">Join</a>
+                                <span><img src="user.png" alt="Users" style="width: 20px;height:20px;"> 178K</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="splide__slide gr-item">
+                        <div class="content">
+                            <div class="head">
+                                Bookworm
+                            </div>
+                            <div class="body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nobis, repellendus cupiditate in doloribus enim illo dignissimos a voluptatibus perspiciatis impedit exercitationem. Quod ut inventore nesciunt, reprehenderit tempore, atque corrupti pariatur non delectus et, aspernatur optio. Dolores esse ad harum, provident eius autem dicta sint beatae est laborum a cupiditate corporis voluptate nostrum repellendus suscipit sequi dolorem consequatur aliquam earum eveniet distinctio. Molestias ex tempore vitae ducimus facere quaerat incidunt laboriosam possimus, non quas reiciendis, enim et error officiis id quasi aperiam quos iste eos. Maxime magni repudiandae officia nesciunt commodi animi optio ex asperiores accusamus? Quaerat impedit tempore facere.
+                            </div>
+                            <div class="info">
+                                <a href="#" class="join-btn">Join</a>
+                                <span><img src="user.png" alt="Users" style="width: 20px;height:20px;"> 178K</span>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="team">
+        <!-- Team -->
+        <span>Team</span>
+        <div class="founders">
+            <div class="founder">
+                <img src="person.png" alt="founder">
+                <div class="red-line"></div>
+                <span>Sample Perddsadassfsdson</span>
+                <div class="content-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, optio!
+                </div>
+            </div>
+            <div class="founder">
+                <img src="person.png" alt="founder">
+                <div class="red-line">
+                    <span>Sample Person</span>
+                </div>
+                <div class="content-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, optio!
+                </div>
+            </div>
+            <div class="founder">
+                <img src="person.png" alt="founder">
+                <div class="red-line"></div>
+                <span>Sample Person</span>
+                <div class="content-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, optio!
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="events">
+        <!-- Events -->
+    </section>
+    <section class="partners">
+        <!-- some partners -->
+    </section>
+    <footer>
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.17/dist/js/splide.min.js"></script>
+    <script>
+        new Splide( '#gourps', {direction: 'ttb',
+  height   : '85vh'} ).mount();
+  new Splide( '#main' ).mount();
+        // $(window).resize(function() {
+        //     var h = $(window).height();
+        //     var w = $(window).width();
+        //     if (w < 750) {
+        //         document.getElementById('poster1').src = "https://dummyimage.com/650x650";
+        //     }
+        // });
+    </script>
+</body>
+
+</html>

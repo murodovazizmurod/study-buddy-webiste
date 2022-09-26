@@ -1,0 +1,346 @@
+/* 
+    Author: Murodov Azizmurod (https://github.com/muroodovazizmurod)
+    Started: 12.09.2022 18:55
+
+*/
+
+
+/* Some shit */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    /* border: 1px solid red; */
+}
+
+body {
+    background-color: #2D2D39;
+}
+
+svg {
+    display: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: #6FC7DF;
+    font-weight: bold;
+}
+
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+img {
+    box-sizing: content-box;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+div.circle {
+    background-color: #6fc7df;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+
+/* Header */
+
+header {
+    width: 90%;
+    margin: 0 auto;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3F4156;
+    padding: 25px;
+}
+
+header > div.group {
+    border-radius: 50px;
+    width: 50%;
+    background: #6FC7DF;
+    padding: 10px;
+    box-shadow: 0px 2px 5px #000;
+}
+header > div.group input{
+    display: none;
+}
+
+
+header > div.group > ul {
+    font-weight: bolder;
+    justify-content: space-around;
+}
+
+header > div.group > ul > li > a {
+    color: #2D2D39;
+    font-size: 18pt;
+}
+
+@media (max-width: 870px) {
+    header > div.group > ul > li > a {
+        font-size: 15pt;
+    }
+    div.user > a {
+        font-size: 15px;
+    }
+    div.circle {
+        width: 30px;
+        height: 30px;
+    }
+    div.logo > img {
+        width: 125px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 650px) {
+    header > div.group {
+        width: auto;
+    }
+    
+    header > div.group > ul {
+        background-color: #6FC7DF;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 100;
+        top: -150%;
+        left: 0;
+        transition: 0.5s;       
+    }
+
+    header > div.group > label{
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 46%;
+        font-size: 15px;
+        z-index: 1000;
+
+    }
+    #chekc:checked ~ ul{  
+        top: 0; 
+    }
+    #chekc:checked ~ label{
+        position: fixed;
+    }
+
+    .fa-bars {
+        display: block;
+    }
+}
+
+
+@media (min-width: 651px) {
+    .fa-bars {
+        display: none;
+        font-size: 14pt;
+    }
+}
+
+
+
+
+div.user {
+    display: flex;
+    align-items: center;
+}
+
+div.user > a {
+    font-size: 18pt;
+    margin-right: 10px;
+}
+
+
+
+/* Main Section */
+
+section.main {
+    width: 90%;
+    margin: 1em auto;
+    height: 80vh;
+    /* border: 1px solid red; */
+}
+
+.splide {
+    position: relative;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.splide__arrow {
+    border-radius: 0%;
+    height: 9em;
+    width: 9em;
+}
+
+.splide__arrow--prev {
+    background: url('up.png') center center no-repeat;
+}
+
+#main > div.splide__arrows.splide__arrows--ltr > button.splide__arrow.splide__arrow--prev {
+    transform: rotate(-90deg);
+}
+
+.splide__arrow--next {
+    background: url('down.png') center center no-repeat;
+}
+
+#main > div.splide__arrows.splide__arrows--ltr > button.splide__arrow.splide__arrow--next {
+    transform: rotate(270deg);
+}
+
+.gr {
+    height: 100vh;
+}
+
+.gr-item {
+    position: relative;
+    min-height: 100vh;
+}
+
+.gr-item > .content {
+    position: relative;
+    width: 70vw;
+    background-color: #2D2D39;
+    padding: 30px;
+    color: #fafafa;
+    border-radius: 20px;
+}
+
+.gr-item > .content > .head {
+    position: absolute;
+    padding: 7px 4em;
+    background-color: #3D3F54;
+    color: #fff;
+    left: 30px;
+    top: -25px;
+    font-size: 18pt;
+    border-radius: 8px;
+    font-weight: bold;
+
+}
+
+
+.gr-item > .content > .info {
+    position: absolute;
+    background-color: #3D3F54;
+    color: #fff;
+    right: 35px;
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.gr-item > .content > .info > a {
+    background-color: #425979;
+    color: #fff;
+    padding: 11px 25px;
+    border-radius: 8px;
+}
+
+.gr-item > .content > .info > span {
+    padding: 10px 4em;
+}
+
+.splide__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red;   */
+    height: 100vh;
+}
+
+.splide__slide > img.poster {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Groups Section */
+
+section.groups {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 1em auto;
+    /* border: 1px solid red; */
+    background-color: #67B9CF;
+}
+
+
+
+
+
+/* Teams */
+section.team {
+    background-color: #2D2D39;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+
+section.team > span {
+    font-size: 25pt;
+    padding: 10px 55px;
+    background-color: #6FC7DF;
+    border-radius: 20px;
+}
+
+
+section.team > .founders {
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    margin: 14em auto;
+}
+
+section.team > .founders > .founder {
+    text-align: center;
+    max-width: 25%;
+    background-color: #484F62;
+    position: relative;
+    z-index: 1555;
+}
+
+section.team > .founders > .founder > img {
+    min-width: 200px;
+    /* min-height: 500px; */
+    margin-top: -60%;
+
+    z-index: 1;
+}
+
+section.team > .founders > .founder > .red-line > span {
+    font-size: 20pt;
+    padding: 10px 0;
+    width: 90%;
+    margin: 1em auto;
+    background-color: #6FC7DF;
+    border-radius: 20px;
+    position: absolute;
+    left: 15px;
+
+}
+
+section.team > .founders > .founder > .red-line {
+    width: 110%;
+    background-color: #9A3040;
+    padding: 20px 0;
+    position: absolute;
+    left: -15px;
+}
